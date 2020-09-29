@@ -14,10 +14,11 @@ def gotMostVisited(n , sprints)-> int:
         i = i + 1
                 
     trainCountIth = [0] # trains at 0th time
-        
+    
     for i in range(1,n+2):
         trainCountIth.append(trainCountIth[i-1] + time_counts[i])
-            
+        
+    # presents top 3 values  and it's index
     time_p = heapq.nlargest(3, range(len(trainCountIth)), trainCountIth.__getitem__)
     
     return time_p
