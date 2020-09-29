@@ -12,3 +12,13 @@ A = [3, 5,2,3,4,6,1,6,5,6]
 for dup in sorted(functio(A),reverse =True):
     for i in range(len(dup[1])):
         print(dup[0],i)
+"""
+Output :
+6 0
+6 1
+6 2
+5 0
+5 1
+3 0
+3 1
+"""
